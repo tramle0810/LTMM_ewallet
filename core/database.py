@@ -358,6 +358,5 @@ def show_database():
 
     print("=" * 100)
 
-
     conn.commit()
     conn.close()
