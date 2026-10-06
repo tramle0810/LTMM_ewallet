@@ -7,7 +7,9 @@ import traceback
 
 from PySide6.QtWidgets import QApplication, QMessageBox
 
+
 from core import database
+from core.database import show_database
 from core.wallet_service import WalletService
 from ui.main_window import MainWindow
 from ui.theme import apply_theme
@@ -35,4 +37,5 @@ def main():
 
 
 if __name__ == "__main__":
+    show_database()
     sys.exit(main())
